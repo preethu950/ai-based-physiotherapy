@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily 100% - Checklist Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="header-left">
+                <h1>Daily 100%</h1>
+                <p id="date-display">Today is...</p>
+            </div>
+            <div class="progress-container">
+                <svg class="progress-ring" width="80" height="80">
+                    <circle class="progress-ring__circle-bg" stroke="rgba(255,255,255,0.1)" stroke-width="6" fill="transparent" r="34" cx="40" cy="40"/>
+                    <circle class="progress-ring__circle" stroke="#00ff88" stroke-width="6" fill="transparent" r="34" cx="40" cy="40"/>
+                </svg>
+                <div class="progress-text" id="progress-text">0%</div>
+            </div>
+        </header>
+
+        <main>
+            <section class="checklist-section" id="morning-section">
+                <h2>🌅 Morning</h2>
+                <div class="task-list" id="morning-tasks"></div>
+            </section>
+
+            <section class="checklist-section" id="day-section">
+                <h2>☀️ Throughout the Day</h2>
+                <div class="task-list" id="day-tasks"></div>
+            </section>
+
+            <section class="checklist-section" id="evening-section">
+                <h2>🌙 Evening</h2>
+                <div class="task-list" id="evening-tasks"></div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
